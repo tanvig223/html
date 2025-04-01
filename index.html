@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #warning {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 20px;
+            border: 2px solid red;
+            background-color: black;
+        }
+        #gif-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="warning" onclick="showPrank()">Your phone has been hacked! Click here to remove it.</div>
+        <div id="gif-container">
+            <img src="https://media.giphy.com/media/l41YkXCFu1eB2f0Z4/giphy.gif" alt="April Fool!">
+            <img src="https://media.giphy.com/media/xT1XGNBgCO9Z5ff8qM/giphy.gif" alt="April Fool!">
+            <img src="https://media.giphy.com/media/3o7TKsQYKgR4voYze8/giphy.gif" alt="April Fool!">
+        </div>
+    </div>
+
+    <script>
+        function showPrank() {
+            document.getElementById('warning').style.display = 'none';
+            document.getElementById('gif-container').style.display = 'block';
+            document.body.style.backgroundColor = 'white';
+        }
+    </script>
+</body>
+</html>
